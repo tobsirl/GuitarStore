@@ -1,0 +1,24 @@
+{
+  "name": "GuitarStore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobsirl/GuitarStore.git"
+  },
+  "keywords": [],
+  "author": "Paul Tobin <tobster111@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobsirl/GuitarStore/issues"
+  },
+  "homepage": "https://github.com/tobsirl/GuitarStore#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
