@@ -60,6 +60,15 @@ body {
     animation-duration: 1.5s;
     animation-timing-function: ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #233237, #984843);
+  -webkit-background-clip: text;
+  color: transparent; }
+
 *,
 *::after,
 *::before {
