@@ -246,9 +246,12 @@ body {
     backface-visibility: hidden; }
     .card__side--front {
       background-color: red; }
+      .card__side--front-1 {
+        background-image: linear-gradient(to right bottom, #eac67a, #984843); }
     .card__side--back {
-      background-color: green;
       transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #eac67a, #984843); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
