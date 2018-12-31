@@ -35,6 +35,20 @@
     }
   }
 
+  &--rustyred {
+    //background-color: $color-rustyred;
+    background-image: linear-gradient(
+          to right bottom,
+          $color-warmyellow,
+          $color-rustyred
+        );
+    color: $color-white;
+
+    &::after {
+      // background-color: $color-rustyred;
+    }
+  }
+
   &::after {
     content: '';
     display: inline-block;
