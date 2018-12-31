@@ -5,9 +5,7 @@
   height: 50rem;
 
   &__side {
-    background-color: orangered;
-    color: #fff;
-    font-size: 2rem;
+    // background-color: orangered;
 
     height: 50rem;
     transition: all 0.8s ease;
@@ -52,7 +50,7 @@
   &__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: soft-light;
+    background-blend-mode: soft-light; // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     &--1 {
       background-image: linear-gradient(
           to right bottom,
@@ -61,5 +59,43 @@
         ),
         url(../../img/acousticguitar.jpg);
     }
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-warmyellow,
+          $color-rustyred
+        ),
+        url(../../img/acousticguitar.jpg);
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-warmyellow,
+          $color-rustyred
+        ),
+        url(../../img/acousticguitar.jpg);
+    }
+  }
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-direction-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-warmyellow, 0.85),
+      rgba($color-rustyred, 0.85)
+    );
   }
 }
