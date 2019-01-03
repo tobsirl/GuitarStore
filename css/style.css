@@ -133,6 +133,17 @@ body {
   padding: 15rem 0;
   background-color: #f7f7f7; }
 
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #eac67a, #984843); }
+
+.book {
+  background-image: url(../../img/bookingbg.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
