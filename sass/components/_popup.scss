@@ -4,17 +4,24 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba($color-black, .8);
+  background-color: rgba($color-black, 0.8);
   z-index: 9999;
-
 
   &__content {
     @include absCenter;
     width: 75%;
     height: 50rem;
     background-color: $color-white;
-    box-shadow: 0 2rem 4rem rgba($color-black, .2);
-
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
   }
 
+  &__left {
+
+    
+    &__img {
+      height: 20rem;
+      width: 20rem;
+    }
+  }
 }
