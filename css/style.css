@@ -474,6 +474,17 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup__close:link, .popup__close:visited {
+    color: #333;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s; }
+  .popup__close:hover {
+    color: #18121e; }
   .popup__content {
     position: absolute;
     top: 50%;

@@ -16,6 +16,24 @@
     visibility: visible;
   }
 
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      color: $color-navyblue;
+    }
+  }
+
   &__content {
     @include absCenter;
     width: 75%;
