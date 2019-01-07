@@ -19,15 +19,15 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--front {
-      background-color: red;
+      background-color: $color-white;
 
-      &-1 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-warmyellow,
-          $color-rustyred
-        );
-      }
+      // &-1 {
+      //   background-image: linear-gradient(
+      //     to right bottom,
+      //     $color-warmyellow,
+      //     $color-rustyred
+      //   );
+      // }
     }
     &--back {
       transform: rotateY(180deg);
@@ -99,7 +99,7 @@
   }
   &__details {
     padding: 3rem;
-    color: $color-white;
+    
     ul {
       list-style: none;
       width: 80%;
@@ -109,7 +109,7 @@
         font-size: 1.5rem;
         padding: 1rem;
         &:not(:last-child) {
-          border-bottom: 1px solid $color-white;
+          border-bottom: 1px solid $color-grey-dark;
         }
       }
     }
@@ -123,20 +123,62 @@
     width: 90%;
     text-align: center;
   }
-  
   &__price-box {
     text-align: center;
     color: $color-white;
     margin-bottom: 8rem;
   }
-
   &__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
-
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+  }
+
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        // clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }
