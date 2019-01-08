@@ -13,3 +13,9 @@
 
 ## Stories
 ![stories](https://user-images.githubusercontent.com/25591390/50828705-05550680-133a-11e9-9a5c-15a6d465cac0.PNG)
+
+## Bookings
+![booking](https://user-images.githubusercontent.com/25591390/50828784-451bee00-133a-11e9-8bd2-66c96e775587.PNG)
+
+## Footer
+![footer](https://user-images.githubusercontent.com/25591390/50828811-5c5adb80-133a-11e9-9968-a66cac53b073.PNG)
